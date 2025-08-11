@@ -352,7 +352,7 @@ export default function ImpressorasPage() {
                     <SelectValue placeholder="Todos os setores" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Todos os setores</SelectItem>
+                    <SelectItem value="all">Todos os setores</SelectItem>
                     <SelectItem value="financeiro">Financeiro</SelectItem>
                     <SelectItem value="marketing">Marketing</SelectItem>
                     <SelectItem value="rh">RH</SelectItem>
@@ -368,7 +368,7 @@ export default function ImpressorasPage() {
                     <SelectValue placeholder="Todos os status" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Todos os status</SelectItem>
+                    <SelectItem value="all">Todos os status</SelectItem>
                     <SelectItem value="ativa">Ativa</SelectItem>
                     <SelectItem value="inativa">Inativa</SelectItem>
                   </SelectContent>
@@ -382,7 +382,7 @@ export default function ImpressorasPage() {
                     <SelectValue placeholder="Todos os tipos" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Todos os tipos</SelectItem>
+                    <SelectItem value="all">Todos os tipos</SelectItem>
                     <SelectItem value="pb">P&B</SelectItem>
                     <SelectItem value="colorida">Colorida</SelectItem>
                   </SelectContent>
