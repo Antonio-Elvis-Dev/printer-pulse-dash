@@ -216,7 +216,7 @@ export default function RegistrosPage() {
                   <SelectValue placeholder="Todas as impressoras" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todas as impressoras</SelectItem>
+                  <SelectItem value="all">Todas as impressoras</SelectItem>
                   <SelectItem value="hp-400">HP LaserJet Pro 400</SelectItem>
                   <SelectItem value="canon-g6010">Canon PIXMA G6010</SelectItem>
                   <SelectItem value="brother-2395">Brother HL-L2395DW</SelectItem>
@@ -231,7 +231,7 @@ export default function RegistrosPage() {
                   <SelectValue placeholder="Todas as pessoas" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todas as pessoas</SelectItem>
+                  <SelectItem value="all">Todas as pessoas</SelectItem>
                   <SelectItem value="joao">João Silva</SelectItem>
                   <SelectItem value="maria">Maria Santos</SelectItem>
                   <SelectItem value="pedro">Pedro Oliveira</SelectItem>
@@ -246,7 +246,7 @@ export default function RegistrosPage() {
                   <SelectValue placeholder="Todos os tipos" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todos os tipos</SelectItem>
+                  <SelectItem value="all">Todos os tipos</SelectItem>
                   <SelectItem value="pb">P&B</SelectItem>
                   <SelectItem value="colorida">Colorida</SelectItem>
                 </SelectContent>
