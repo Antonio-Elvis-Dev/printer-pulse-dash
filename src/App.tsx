@@ -12,6 +12,7 @@ import ImpressorasPage from "./pages/ImpressorasPage";
 import SetoresPage from "./pages/SetoresPage";
 import RegistrosPage from "./pages/RegistrosPage";
 import RelatoriosPage from "./pages/RelatoriosPage";
+import ConfiguracoesPage from "./pages/ConfiguracoesPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -38,7 +39,7 @@ const App = () => (
             <Route path="/setores" element={<AppLayout><SetoresPage /></AppLayout>} />
             <Route path="/registros" element={<AppLayout><RegistrosPage /></AppLayout>} />
             <Route path="/relatorios" element={<AppLayout><RelatoriosPage /></AppLayout>} />
-            <Route path="/configuracoes" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Configurações (em construção)</p></div></AppLayout>} />
+            <Route path="/configuracoes" element={<AppLayout><ConfiguracoesPage /></AppLayout>} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
