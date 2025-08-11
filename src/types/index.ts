@@ -1,5 +1,14 @@
 // Tipos para o sistema de gerenciamento de impressoras
 
+export interface Pessoa {
+  id: string;
+  nome: string;
+  email: string;
+  setorId?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 export interface Setor {
   id: string;
   nome: string;
@@ -16,16 +25,46 @@ export interface Impressora {
   tipo: 'colorida' | 'pretoBranco';
   status: 'ativa' | 'inativa';
   setorId: string;
+  ultimaLeitura: number;
+  leituraAtual: number;
   createdAt: Date;
   updatedAt: Date;
+}
+
+export interface AssociacaoPessoaImpressora {
+  id: string;
+  pessoaId: string;
+  impressoraId: string;
+  createdAt: Date;
 }
 
 export interface RegistroImpressao {
   id: string;
   impressoraId: string;
+  pessoaId?: string; // Nova propriedade para vincular à pessoa
   data: Date;
   quantidade: number;
   tipo: 'colorida' | 'pretoBranco';
+  createdAt: Date;
+}
+
+export interface RegistroImpressaoPessoa {
+  id: string;
+  pessoaId: string;
+  impressoraId: string;
+  data: Date;
+  quantidade: number;
+  tipo: 'colorida' | 'pretoBranco';
+  createdAt: Date;
+}
+
+export interface LeituraImpressora {
+  id: string;
+  impressoraId: string;
+  ultimaLeitura: number;
+  leituraAtual: number;
+  dataLeitura: Date;
+  totalCalculado: number;
   createdAt: Date;
 }
 

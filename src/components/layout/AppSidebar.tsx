@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { 
   LayoutDashboard, 
   Printer, 
+  Users,
   Building2, 
   FileText, 
   BarChart3, 
@@ -22,6 +23,7 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   { title: 'Dashboard', url: '/', icon: LayoutDashboard },
   { title: 'Impressoras', url: '/impressoras', icon: Printer },
+  { title: 'Pessoas', url: '/pessoas', icon: Users },
   { title: 'Setores', url: '/setores', icon: Building2 },
   { title: 'Registros', url: '/registros', icon: FileText },
   { title: 'Relatórios', url: '/relatorios', icon: BarChart3 },

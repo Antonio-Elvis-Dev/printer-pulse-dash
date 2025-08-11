@@ -3,9 +3,11 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "@/components/theme-provider";
 import { AppProvider } from "@/contexts/AppContext";
 import { AppLayout } from "@/components/layout/AppLayout";
 import Dashboard from "./pages/Dashboard";
+import PessoasPage from "./pages/PessoasPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -19,7 +21,8 @@ const queryClient = new QueryClient({
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <AppProvider>
+    <ThemeProvider defaultTheme="light" storageKey="printer-pulse-theme">
+      <AppProvider>
       <TooltipProvider>
         <Toaster />
         <Sonner />
@@ -27,6 +30,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<AppLayout><Dashboard /></AppLayout>} />
             <Route path="/impressoras" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Impressoras (em construção)</p></div></AppLayout>} />
+            <Route path="/pessoas" element={<AppLayout><PessoasPage /></AppLayout>} />
             <Route path="/setores" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Setores (em construção)</p></div></AppLayout>} />
             <Route path="/registros" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Registros (em construção)</p></div></AppLayout>} />
             <Route path="/relatorios" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Relatórios (em construção)</p></div></AppLayout>} />
@@ -37,7 +41,8 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </AppProvider>
-  </QueryClientProvider>
+  </ThemeProvider>
+</QueryClientProvider>
 );
 
 export default App;

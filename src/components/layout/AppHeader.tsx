@@ -2,12 +2,13 @@ import { useLocation } from 'react-router-dom';
 import { Search, Bell, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { useApp } from '@/contexts/AppContext';
 
 // Mapeamento de títulos das páginas
 const pageTitles: Record<string, string> = {
   '/': 'Dashboard',
-  '/impressoras': 'Gerenciar Impressoras',
+  '/pessoas': 'Gerenciar Pessoas',
   '/setores': 'Gerenciar Setores',
   '/registros': 'Registros de Impressão',
   '/relatorios': 'Relatórios',
@@ -38,7 +39,9 @@ export function AppHeader() {
           />
         </div>
 
-        {/* Notificações */}
+        {/* Tema e Notificações */}
+        <ThemeToggle />
+
         <Button variant="ghost" size="sm" className="relative">
           <Bell className="w-5 h-5" />
           <span className="absolute -top-1 -right-1 w-2 h-2 bg-destructive rounded-full"></span>

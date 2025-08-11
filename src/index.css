@@ -75,6 +75,57 @@
 
   }
 
+  .dark {
+    /* Cores base dark */
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+
+    /* Cartões e superfícies dark */
+    --card: 15 23 42;
+    --card-foreground: 248 250 252;
+
+    /* Popover dark */
+    --popover: 15 23 42;
+    --popover-foreground: 248 250 252;
+
+    /* Cores primárias dark */
+    --primary: 219 78% 70%;
+    --primary-foreground: 15 23 42;
+    --primary-light: 219 78% 75%;
+    --primary-dark: 219 78% 65%;
+
+    /* Cores secundárias dark */
+    --secondary: 30 41% 25%;
+    --secondary-foreground: 248 250 252;
+
+    /* Cores neutras dark */
+    --muted: 30 41% 25%;
+    --muted-foreground: 156 163 175;
+
+    /* Cor de destaque dark */
+    --accent: 212 100% 60%;
+    --accent-foreground: 15 23 42;
+
+    /* Cores de status dark */
+    --success: 142 76% 50%;
+    --success-foreground: 15 23 42;
+    --warning: 43 96% 70%;
+    --warning-foreground: 15 23 42;
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 15 23 42;
+
+    /* Bordas e entradas dark */
+    --border: 30 41% 25%;
+    --input: 30 41% 25%;
+    --ring: 219 78% 70%;
+
+    /* Sidebar dark */
+    --sidebar-bg: 15 23 42;
+    --sidebar-fg: 226 32% 91%;
+    --sidebar-active: 219 78% 70%;
+    --sidebar-hover: 30 41% 25%;
+  }
+
 }
 
 @layer base {
