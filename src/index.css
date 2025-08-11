@@ -6,60 +6,60 @@
 
 @layer base {
   :root {
-    /* Cores base */
-    --background: 248 250 252;
-    --foreground: 15 23 42;
+    /* Light Theme - Cores claras e azuis */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
 
     /* Cartões e superfícies */
-    --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
 
     /* Popover */
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
 
-    /* Cores primárias - Azul profissional */
-    --primary: 219 78% 20%;
-    --primary-foreground: 248 250 252;
-    --primary-light: 219 78% 45%;
-    --primary-dark: 219 78% 15%;
+    /* Cores primárias - Azul elegante */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 221 83% 63%;
+    --primary-dark: 221 83% 43%;
 
-    /* Cores secundárias - Slate */
-    --secondary: 213 27% 84%;
-    --secondary-foreground: 15 23 42;
+    /* Cores secundárias - Azul claro */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 240 5.9% 10%;
 
     /* Cores neutras */
-    --muted: 241 245 249;
-    --muted-foreground: 100 116 139;
+    --muted: 210 40% 96%;
+    --muted-foreground: 240 3.8% 46.1%;
 
     /* Cor de destaque - Azul vibrante */
-    --accent: 212 100% 50%;
-    --accent-foreground: 255 255 255;
+    --accent: 210 40% 96%;
+    --accent-foreground: 240 5.9% 10%;
 
     /* Cores de status */
     --success: 142 76% 36%;
-    --success-foreground: 255 255 255;
+    --success-foreground: 0 0% 98%;
     --warning: 43 96% 56%;
-    --warning-foreground: 255 255 255;
+    --warning-foreground: 0 0% 98%;
     --destructive: 0 84% 60%;
-    --destructive-foreground: 255 255 255;
+    --destructive-foreground: 0 0% 98%;
 
     /* Bordas e entradas */
-    --border: 226 32% 91%;
-    --input: 226 32% 91%;
-    --ring: 219 78% 20%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
 
-    /* Sidebar específica */
-    --sidebar-bg: 15 23 42;
-    --sidebar-fg: 226 32% 91%;
-    --sidebar-active: 219 78% 20%;
-    --sidebar-hover: 217 33% 17%;
+    /* Sidebar específica - Azul escuro */
+    --sidebar-bg: 0 0% 100%;
+    --sidebar-fg: 240 10% 3.9%;
+    --sidebar-active: 221 83% 53%;
+    --sidebar-hover: 210 40% 96%;
 
     /* Métricas do dashboard */
-    --metric-bg: linear-gradient(135deg, hsl(219 78% 20%), hsl(219 78% 25%));
+    --metric-bg: linear-gradient(135deg, hsl(221 83% 53%), hsl(221 83% 58%));
     --metric-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 41%));
     --metric-warning: linear-gradient(135deg, hsl(43 96% 56%), hsl(43 96% 61%));
-    --metric-info: linear-gradient(135deg, hsl(212 100% 50%), hsl(212 100% 55%));
+    --metric-info: linear-gradient(135deg, hsl(221 83% 53%), hsl(221 83% 58%));
 
     /* Sombras elegantes */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -72,58 +72,57 @@
     --transition-slow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
-
   }
 
   .dark {
-    /* Cores base dark */
-    --background: 15 23 42;
-    --foreground: 248 250 252;
+    /* Dark Theme - Zinc e roxo */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
     /* Cartões e superfícies dark */
-    --card: 15 23 42;
-    --card-foreground: 248 250 252;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
 
     /* Popover dark */
-    --popover: 15 23 42;
-    --popover-foreground: 248 250 252;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Cores primárias dark */
-    --primary: 219 78% 70%;
-    --primary-foreground: 15 23 42;
-    --primary-light: 219 78% 75%;
-    --primary-dark: 219 78% 65%;
+    /* Cores primárias dark - Roxo elegante */
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 263 70% 60%;
+    --primary-dark: 263 70% 40%;
 
-    /* Cores secundárias dark */
-    --secondary: 30 41% 25%;
-    --secondary-foreground: 248 250 252;
+    /* Cores secundárias dark - Zinc */
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Cores neutras dark */
-    --muted: 30 41% 25%;
-    --muted-foreground: 156 163 175;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
 
     /* Cor de destaque dark */
-    --accent: 212 100% 60%;
-    --accent-foreground: 15 23 42;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
 
     /* Cores de status dark */
-    --success: 142 76% 50%;
-    --success-foreground: 15 23 42;
-    --warning: 43 96% 70%;
-    --warning-foreground: 15 23 42;
-    --destructive: 0 84% 70%;
-    --destructive-foreground: 15 23 42;
+    --success: 142 76% 36%;
+    --success-foreground: 240 10% 3.9%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 240 10% 3.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
     /* Bordas e entradas dark */
-    --border: 30 41% 25%;
-    --input: 30 41% 25%;
-    --ring: 219 78% 70%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 263 70% 50%;
 
-    /* Sidebar dark */
-    --sidebar-bg: 15 23 42;
-    --sidebar-fg: 226 32% 91%;
-    --sidebar-active: 219 78% 70%;
-    --sidebar-hover: 30 41% 25%;
+    /* Sidebar dark - Zinc escuro com detalhes roxos */
+    --sidebar-bg: 240 10% 3.9%;
+    --sidebar-fg: 0 0% 98%;
+    --sidebar-active: 263 70% 50%;
+    --sidebar-hover: 240 3.7% 15.9%;
   }
 
 }
