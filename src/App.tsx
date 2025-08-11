@@ -8,6 +8,10 @@ import { AppProvider } from "@/contexts/AppContext";
 import { AppLayout } from "@/components/layout/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import PessoasPage from "./pages/PessoasPage";
+import ImpressorasPage from "./pages/ImpressorasPage";
+import SetoresPage from "./pages/SetoresPage";
+import RegistrosPage from "./pages/RegistrosPage";
+import RelatoriosPage from "./pages/RelatoriosPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -29,11 +33,11 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<AppLayout><Dashboard /></AppLayout>} />
-            <Route path="/impressoras" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Impressoras (em construção)</p></div></AppLayout>} />
+            <Route path="/impressoras" element={<AppLayout><ImpressorasPage /></AppLayout>} />
             <Route path="/pessoas" element={<AppLayout><PessoasPage /></AppLayout>} />
-            <Route path="/setores" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Setores (em construção)</p></div></AppLayout>} />
-            <Route path="/registros" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Registros (em construção)</p></div></AppLayout>} />
-            <Route path="/relatorios" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Relatórios (em construção)</p></div></AppLayout>} />
+            <Route path="/setores" element={<AppLayout><SetoresPage /></AppLayout>} />
+            <Route path="/registros" element={<AppLayout><RegistrosPage /></AppLayout>} />
+            <Route path="/relatorios" element={<AppLayout><RelatoriosPage /></AppLayout>} />
             <Route path="/configuracoes" element={<AppLayout><div className="text-center py-12"><p className="text-muted-foreground">Página de Configurações (em construção)</p></div></AppLayout>} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
